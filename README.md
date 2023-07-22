@@ -20,5 +20,9 @@ In this project, I have designed a personal portfolio page using HTML and CSS. T
 
 For this project, I have created a functional To-Do List application using HTML, CSS, and JavaScript. The To-Do List allows users to add, edit, and delete tasks, and it also features task prioritization. The use of JavaScript enables a seamless user experience by updating the list dynamically without the need for page refreshes.
 
+### 5. SQL Basics File
+
+In this project, I have included an SQL file that covers the basic understanding of MySQL. The SQL file contains sample queries and explanations on database creation, table creation, data insertion, and simple data manipulation. It's intended to provide a foundational knowledge of working with databases and SQL queries.
+
 I hope you find these projects interesting and insightful! Feel free to explore the individual project folders for more details on each of them. Happy coding!
 
