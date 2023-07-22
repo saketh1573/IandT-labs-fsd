@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Things to do</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header-container">
+    <h1 class="header-title">Things to do</h1>
+    <div class="color-options">
+      <span>Select header color:</span>
+      <label class="color-selector">
+        <input type="radio" name="header-color" class="header-color" value="#87CEFA">
+        <span class="color-option" style="background-color: #87CEFA;"></span>
+      </label>
+      <label class="color-selector">
+        <input type="radio" name="header-color" class="header-color" value="#FFB6C1">
+        <span class="color-option" style="background-color: #FFB6C1;"></span>
+      </label>
+      <label class="color-selector">
+        <input type="radio" name="header-color" class="header-color" value="#E6E6FA">
+        <span class="color-option" style="background-color: #E6E6FA;"></span>
+      </label>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="input-container">
+      <input type="text" id="taskInput" placeholder="Enter your task...">
+      <button id="addButton">Add</button>
+    </div>
+    <ul id="taskList">
+      <!-- Tasks will be added dynamically here -->
+    </ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
