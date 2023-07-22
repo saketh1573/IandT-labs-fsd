@@ -1,0 +1,15 @@
+create database sql_task;
+use sql_task;
+create table movies(movie_id int primary key,movie_title varchar(50),release_year int,director_id int);
+insert into movies(movie_id,movie_title,release_year,director_id) values(111,'Dasavathaaram',2008,153),(222,'KGF',2018,2536),(333,'KGF-2',2022,2536),(444,'Ala Vaikunthapurramloo',2020,2345),(555,'Chatrapathi',2005,1798),(666,'RRR',2022,1798),(777,'Snehithudu',2012,5576);
+create table directors(director_id int primary key,director_name varchar(50));
+insert  into directors( director_id,director_name) values(153,'K.S. Ravi Kumar'),(2536,'Prashanth Neel'),(2345,'Trivikram Srinivas'),(1798,'S.S. Rajamouli'),(5576,'S. Shankar');
+create table genres(genre_id int primary key,genre_name varchar(50));
+insert  into genres( genre_id,genre_name) values(765,'SciFi-Disaster'),(632,'Action-Thriller'),(943,'Action-Drama'),(432,'Historical-Action'),(147,'comedy');
+create table movie_genres(movie_id int primary key,genre_id int );
+insert into movie_genres(movie_id,genre_id) values(111,765), (222,632),(333,632),(444,943),(555,943),(666,432),(777,147);
+select movie_title,director_name from movies join directors on directors.director_id=movies.director_id;
+select movie_title,release_year,director_name from movies join directors on directors.director_id=movies.director_id;
+select director_name,movie_title from directors left  join movies on directors.director_id=movies.director_id;
+select movie_title, release_year, director_name from movies left join directors on movies.director_id = directors.director_id;
+select movie_title, genre_name from movies cross join genres;
